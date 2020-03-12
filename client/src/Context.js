@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component, createContext } from 'react'
 import items from './data'
 
-const RoomContext = React.createContext()
+const RoomContext = createContext()
 // <RoomContext.Provider value={}
 
 class RoomProvider extends Component {
