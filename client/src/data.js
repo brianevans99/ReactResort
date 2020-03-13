@@ -708,7 +708,7 @@ export default [
       name: 'presidential',
       slug: 'presidential-room',
       type: 'presidential',
-      price: 600,
+      price: 699,
       size: 1000,
       capacity: 10,
       pets: true,
