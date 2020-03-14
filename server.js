@@ -1,15 +1,7 @@
 const express = require('express')
 const path = require('path')
-const moment = require('moment')
 
 const app = express()
-
-//initialize middleware
-app.use(
-  express.json({
-    extended: false
-  })
-)
 
 //development route *** Comment out or remove upon deployment ***
 // app.get('/', (req, res) => {
