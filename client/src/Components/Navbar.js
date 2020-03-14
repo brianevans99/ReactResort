@@ -7,8 +7,11 @@ import RoomsLink from '../data/RoomsLink'
 
 export default class Navbar extends Component {
   state = {
-    isOpen: false
+    isOpen: false,
+    openNav: 'nav-links show-nav',
+    closeNav: 'nav-links'
   }
+
   handleToggle = () => {
     this.setState({ isOpen: !this.state.isOpen })
   }
@@ -30,12 +33,14 @@ export default class Navbar extends Component {
             </button>
           </div>
           <ul
-            className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}
+            className={
+              this.state.isOpen ? this.state.openNav : this.state.closeNav
+            }
           >
-            <li>
+            <li onClick={this.handleToggle}>
               <HomeLink />
             </li>
-            <li>
+            <li onClick={this.handleToggle}>
               <RoomsLink />
             </li>
           </ul>
