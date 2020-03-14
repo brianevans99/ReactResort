@@ -12,9 +12,9 @@ app.use(
 )
 
 //development route *** Comment out or remove upon deployment ***
-app.get('/', (req, res) => {
-  res.send(`${moment().format('LLLL')} - API is running!`)
-})
+// app.get('/', (req, res) => {
+//   res.send(`${moment().format('LLLL')} - API is running!`)
+// })
 
 //Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
