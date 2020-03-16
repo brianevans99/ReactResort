@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo from '../images/logo.svg'
+import logoLg from '../images/hotelLogo_240x43.png'
 import { FaAlignRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import HomeLink from '../data/HomeLink'
@@ -22,7 +22,7 @@ export default class Navbar extends Component {
         <div className='nav-center'>
           <div className='nav-header'>
             <Link to='/'>
-              <img src={logo} alt='' />
+              <img src={logoLg} alt='' />
             </Link>
             <button
               type='button'
